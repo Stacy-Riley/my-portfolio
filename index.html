@@ -24,6 +24,7 @@
 </head>
 
 <body>
+  <div class="main-container">
  <!-- Header/Navbar Section -->   
   <header id="header">
 
@@ -45,13 +46,13 @@
       <p><em>I'm currently available for hire.</em></p>
 
       <a href="mailto:Info@StacyRiley.dev">  
-        <button id="email-address" type="button">Contact Me</button>
+        <button class="button" id="email-address" type="button">Contact Me</button>
       </a>
+    </div>
 
-      <div class="workspace-img">
-        <img src="img/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="Image of workspace">
-      </div>
-  </div>
+    <div class="workspace-img">
+      <img src="img/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="Image of workspace">
+    </div>
 <!-- About Section -->
   <div id="about">
     <div class="background">
@@ -86,28 +87,36 @@
     <div class="project-1">
       <figure>
         <a href="https://stacy-riley.github.io/unplugged-project-website/" target="_blank">
-          <img src="img/unplugged-site-img.jpg" alt="Unplugged project website link">
+          <img class="p-img" src="img/unplugged-site-img.jpg" alt="Unplugged project website link">
         </a>
       </figure>
       
-      <p>For this project, I created a site with multiple pages, an embedded map, and social links from a Photoshop Markup. Special attention was given to its mobile responsiveness and modern clean lines.</p> 
+      <p>For this project, I created a site with multiple pages, including an embedded map, and social media links using HTML and CSS. The website has mobile responsiveness code and does well in displaying a modern style with clean lines.</p> 
     </div>
     <div class="project-2">
       <figure>
         <a href="https://stacy-riley.github.io/Rogue-Pickings/" target="_blank">
-          <img src="img/rogue-pickings.jpg" alt="Rogue Pickings project website link">
+          <img class="p-img" src="img/rogue-pickings.jpg" alt="Rogue Pickings project website link">
         </a>
         
       </figure>
       
-      <p>This site was created as a landing page, designed to capture the brand's image and style.  Not only was it coded to be mobile responsive, but it was also developed in a way to allow for it to be easily expand as the business grows.</p> 
+      <p>This site was created as a landing page with HTML and CSS, designed to capture the brand's image and personality.  Not only was it coded to be mobile responsive, but it was also developed in a way to allow for it to be easily expand as the business grows.</p> 
     <!--
       <a href="projects/index.html">
-        <button class="btn-to-portfolio-page" type="button">See More Here</button>
+        <button class="button" type="button">See More Here</button>
       </a>
-    -->  
+    --> 
+    </div> 
     </div>
-  </div>
+    <div class="resume-container">
+      <a  href="img/Stacy_Riley_Resume.PDF" target="_blank">
+       <button class="button" type="button">Resume</button>
+      </a>   
+    </div>
+    
+
+  
   <div class="workspace-img">
     <img src="img/avel-chuklanov-DUmFLtMeAbQ-unsplash.jpg" alt="Image of person working">
   </div>
@@ -117,7 +126,7 @@
   <div id="contact">
     <h2>I'd love to talk to you about your project.</h2>
     <a href="mailto:Info@StacyRiley.dev">  
-       <button id="email-address" type="button">Contact Me</button>
+       <button class="button" id="email-address" type="button">Contact Me</button>
     </a>
   </div>
   <div id="social">
@@ -130,18 +139,21 @@
         <a id="icon-github" href="https://github.com/Stacy-Riley" target="_blank">
           <i class="fab fa-github-square zoom"></i>
         </a>  
+  <!--
+    <div >
+      <a  href="img/Stacy_Riley_Resume.PDF" target="_blank">
+       <button class="resume-button" type="button">Resume</button>
+      </a>   
+    </div>
+  -->
   </div>
-  <div class="resume">
-    <a class="resume" href="img/Stacy_Riley_Resume.PDF">Resume</a>   
-  </div>
-
 <!-- Footer Section -->
 
   <footer>
     <p>&copy; Copyright Stacy Riley 2020 </p>
     <p id="photo-credits">Photos by Domenico Loia &amp; Avel Chuklanov on Unsplash</p>
   </footer>
-
+</div> <!-- End of main-container -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
