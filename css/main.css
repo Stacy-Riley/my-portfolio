@@ -17,8 +17,7 @@ html {
   line-height: 1.4;
   border: 0;
   margin: 0;
-  padding: 0;
-  
+  padding: 0; 
 }
 
 body {
@@ -103,15 +102,12 @@ textarea {
 /************************************/
 
 /*******************************************************/
-/** Navbar Section **/
+/** Navbar Section **Mobil **/
 /*******************************************************/
 
 /*nav-bar Not displayed on mobil device */
 #home-page {
   display: none;
-}
-header  {
-  display: flex;
 }
 
 h2 {
@@ -119,20 +115,14 @@ h2 {
 }
 
 /*******************************************************/
-/**Header Section**/
+/**Header Section **Mobil **/
 /*******************************************************/
-.main-container {
-
-}
-
 .intro {
-  /**Centers the figure element **/
+  /**Centers text and button **/
   text-align: center;
-
 }
 
 h1 {
-  /*text-align: center;*/
   width: 90%;
   margin: 0 auto;
   font-size: 2.2em;
@@ -152,7 +142,6 @@ button {
   cursor: pointer;
 }
 
-
 /*Workspace image container for the 2 unsplash images*/
 .workspace-img {
   text-align: center; /*This is centering images*/
@@ -160,20 +149,18 @@ button {
   max-height: 300px;
   overflow: hidden;
   width: 90%;
-  /*display: block;*/
-  /*margin-left: auto;
-  margin-right: auto;*/
+  border: 2px solid white;
 }
+
 /*Styles for the 2 unsplash images*/
 .workspace-img img,
 .projects img      {
-  border: 2px solid white;
   height: auto;
   object-fit: cover;
   width: 100%; 
 } 
 /*******************************************************/
-/** About Section **/
+/** About Section **Mobil **/
 /*******************************************************/
 #about {
   width: 90%;
@@ -183,21 +170,16 @@ button {
 h3 {
   text-align: justify;
 }
-/*
-.resume {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-*/
+
 /*******************************************************/
-/** Portfolio Section **/
+/** Portfolio Section **Mobil **/
 /*******************************************************/
 #projects {
   width: 100%;
-  margin: 60px auto;
+  margin: 50px auto 30px auto;
   text-align: center;
 }
+
 #projects img {
   height: auto;
   object-fit: cover;
@@ -225,7 +207,7 @@ h3 {
   margin: 0;
 }
 /*******************************************************/
-/** Contact Section **/
+/** Contact Section **Mobil **/
 /*******************************************************/
 #contact {
   /*centers parent container for heading */
@@ -241,23 +223,11 @@ h3 {
   width: 80%;
   margin: 30px auto;
 }
-/*
-.button {
-  margin: 20px auto 40px auto;
-  background-color: #db423d;
-  /*border: 20px solid #db423d;*/
- /* border-left: 30px solid #db423d;
-  border-right: 30px solid #db423d;
-  border-top: 20px solid #db423d;
-  border-bottom: 20px solid #db423d;
-  color: white;
-  padding: 10px;
-  
-}
-*/
+
 #social {
   text-align: center;
 }
+
 #social a {
   border: none;
   text-decoration: none;
@@ -266,45 +236,34 @@ h3 {
   text-align: center;
   margin: 40px 15px 40px 15px;
 }
-/*
-.resume {
-  text-align: center;
-  margin: 20px auto;
-  font-size: 1em;
-}
-*/
-
-/*
-.resume a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5em;
-}
-
-.resume:hover {
-  color: #8d9789;
-}
-*/
-
-/** Footer Section **/
+/*******************************************************/
+/** Footer Section **Mobil **/
+/*******************************************************/
 footer  {
   text-align: center;
   font-size: .8em;
   margin: 60px auto 20px auto;
 }
+
 footer p {
   margin: 0 auto;
 }
+
 /* =====================================================
     **** Tablet Styles ****
    =====================================================*/
 @media(min-width: 768px){
-  /*******************************************************/
-  /**** Navbar styles Tablet ****/ 
-  /*******************************************************/
-  /*******************************************************/
-/** Navbar Section **/
+ /*******************************************************/
+/** Navbar Section **** Tablet Styles **** **/
 /*******************************************************/
+#home-page {
+  
+}
+
+header  {
+  display: flex;
+}
+
 h2 {
   margin: 40px;
   font-size: 2em;
@@ -323,6 +282,7 @@ p {
 header  {
   display: flex;
 }
+
 header div {
   flex: 2;
 }
@@ -355,15 +315,21 @@ nav li a {
 }
 
 /*******************************************************/
-/**Header Section**/
+/**Header Section **** Tablet Styles **** **/
 /*******************************************************/
 h1 {
   /*text-align: center;*/
   width: 75%;
   font-size: 2.6em;
 }
+
+/*Container for the 2 unsplash images*/
+.workspace-img {
+  max-height: 400px;
+}
+
 /*******************************************************/
-/** About Section **/
+/** About Section **** Tablet Styles **** **/
 /*******************************************************/
 #about {
   width: 80%;
@@ -393,16 +359,16 @@ h1 {
     grid-template-rows: 50% 50% 50%;
   }
 /*******************************************************/
-/** Portfolio Section **/
+/** Portfolio Section **** Tablet Styles **** **/
 /*******************************************************/
+/*Grid to start in Tablet view*/
 #projects {
   width: 90%;
-  margin-top: 100px;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto;
-  margin: 100px auto;
-  grid-column-gap: all;
+  margin: 100px auto 10px auto;
+  
 }
 /*Project image container */
 figure {
@@ -410,55 +376,18 @@ figure {
   cursor: pointer;
   overflow: hidden;
 }
+
 /*Project images */
 .p-img {
   height: auto;
   object-fit: cover;
   width: 100%;
 }
-/*
-.project-1 {
-  display: flex;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.project-1 figure {
-  flex: 1;
-  order: 1;
-  margin: auto;
-}
-.project-1 p {
-  flex: 1;
-  order: 2;
-  padding: 0 0 0 40px;
-  margin-top: 0;
-  letter-spacing: 0;
-}
-
-.project-2 {
-  display: flex;
-  margin-bottom: 100px;
-}
-.project-2 figure {
-  flex: 1.2;
-  order: 2;
-  margin: auto;
-}
-.project-2 p {
-  flex: 1;
-  order: 1;
-  padding: 40px 40px 0 0;
-  letter-spacing: 0;
-}
-*/
-
 /*******************************************************/
-/** Contact Section **/
+/** Contact Section **** Tablet Styles **** **/
 /*******************************************************/
 
- }
+}
 
 
   /* =====================================================
@@ -468,6 +397,17 @@ figure {
   .project-2 p { 
     padding: 0 40px 0 0;
   }
+
+  /*Container for the 2 unsplash images*/
+  .workspace-img {
+    max-height: 470px;
+  }
+  /*Project image container */
+  figure {
+    max-height: 290px;
+    cursor: pointer;
+    overflow: hidden;
+  }
 }
 
 /* =====================================================
@@ -475,58 +415,41 @@ figure {
    =====================================================*/
 @media(min-width: 1200px){
 /*******************************************************/
-/** Navbar Section **/
+/** Navbar Section **** Desktop Styles ****/
 /*******************************************************/
-nav li a { 
-  font-size: 1.7em;
+  nav li a { 
+    font-size: 1.7em;
+  }
+/*******************************************************/
+/**Header Section **** Desktop Styles ****/
+/*******************************************************/
+
+/*Workspace image container for the 1st unsplash images*/
+  .first-workspace-img {
+    max-height: 550px;
+  }
+
+/*******************************************************/
+/** About Section **** Desktop Styles ****/
+/*******************************************************/
+
+/*******************************************************/
+/** Portfolio Section **** Desktop Styles ****/
+/*******************************************************/
+  #projects {
+    margin: 100px auto 0 auto;
+  }
+
+  /*Project image container */
+  figure {
+    max-height: 337px;
+  }
+
+/*******************************************************/
+/** Contact Section **** Desktop Styles ****/
+/*******************************************************/
+
 }
-/*******************************************************/
-/**Header Section**/
-/*******************************************************/
-
-/*******************************************************/
-/** About Section **/
-/*******************************************************/
-
-/*******************************************************/
-/** Portfolio Section **/
-/*******************************************************/
-#projects {
-  width: 90%;
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto;
-  margin: 100px auto;
-  grid-column-gap: all;
-}
-/*Project image container */
-figure {
-  max-height: 300px;
-  cursor: pointer;
-  overflow: hidden;
-}
-/*Project images */
-figure img {
-  height: auto;
-  object-fit: cover;
-  width: 100%;
-}
-/*******************************************************/
-/** Contact Section **/
-/*******************************************************/
-
- }
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
