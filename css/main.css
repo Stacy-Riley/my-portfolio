@@ -282,11 +282,11 @@ p {
 header  {
   display: flex;
 }
-
+/*Where name is located*/
 header div {
   flex: 2;
 }
-
+/*Where navbar is located*/
 header nav {
   flex: 3;
   justify-content: flex-end;
